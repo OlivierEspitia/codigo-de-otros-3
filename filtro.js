@@ -9,7 +9,7 @@ const productos = [
 ]
 
 const li = document.getElementById("lista-de-productos"); // cambie el byName por by ID 
-const inputElement = document.querySelector('.input');
+const inputElement = document.querySelector('.input');       // cambie el nombre de la constante ya que en el ciclo for se estaba utilizando un i 
 
 function displayProductos(productos) {
   while (li.firstChild) {
@@ -32,7 +32,7 @@ function displayProductos(productos) {
     li.appendChild(d);
   }
 }
-
+   // quite codigo repetido para hacerlo mas limpio 
 displayProductos(productos);
 
 const botonDeFiltro = document.querySelector("button");
